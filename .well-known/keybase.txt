@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/caitelatte
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://caitelatte.com
+  * I am caitelatte (https://keybase.io/caitelatte) on keybase.
+  * I have a public key with fingerprint 5094 3D78 27AF DA68 0025  6A2C 0E07 DF26 3B23 D297
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.4.11"
+        },
+        "key": {
+            "fingerprint": "50943d7827afda6800256a2c0e07df263b23d297",
+            "host": "keybase.io",
+            "key_id": "0E07DF263B23D297",
+            "uid": "c619cfa742bdf782be312881ae9d9000",
+            "username": "caitelatte"
+        },
+        "merkle_root": {
+            "ctime": 1406294045,
+            "hash": "54ec4f0aebe31cf09b521577e344873f7ecdf0d30fc4b130129a3897f2c6091a698aa6464cbce2123aef3f024da2a327304b1736dfc959f830bf20250c5b2830",
+            "seqno": 31095
+        },
+        "service": {
+            "hostname": "caitelatte.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1406294195,
+    "expire_in": 157680000,
+    "prev": "ca51530b87f626c810a2e510d345bfea73a55f1521905bfa397960313ad0d275",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.22 (MingW32)
+
+owFlUn9MVWUYvhDggCxxa8KIBvcuDEfX73zn1z0X6YdCTjQTM4ahsO+c8x04Avdc
+7j1cIJRC0k0EhOmAMqMMKZUgx2oUKYhp/JQNhaahIEwSyTtspkmAnUO0cv33fd/7
+vM/zPs/7lS9+wuDp8dSi4fAoU3+VR/cEb3izf6tXvpFXxDyjNd8oZMjYpuonG8rE
+RqsxHefxyInNshJqU0Rs3uEMXcBEGl3Y4ZQVm4YCZspMEMZdkTpe75ZkWyp22B2y
+TmakAUeRImuBLJJExFgAgDSDoAAwYEUJMiQPSRFyrMaZpjjVx2SN85wpsqjLxAI2
+5jUNvxqSMX/js+cLAkNwgoRYCvKipOnwmCSgxUIgzIkcAEAHOrFjwZOAZBVnIFXF
++sSZ2JGegVMcijLvW1BlHURQgIEcBShamwk503QXFBYoCSCsswsS4HgaEjTLYpKi
+LCwpsVgQJSCSQBIoniABATlEWjhWggIDOAIxnAUhhmIogRcwJCCJsERKAFIigoiE
+LAm0NpZkREngaE6ykICXoJYUEGgeajfNhBNn2RSjlSQAR+/Srw6XLGB9bD23/9kz
+C0qm1mV3KKoiKBlaLU1V7VbdtZpn17GncjCfskCTwss2UdvbfzdLaNDHEyE4LRGc
+a5cdOEXWETSrLxQAXQe75vVpgtaGt7ASAxnBQgAEMU1oyVA0L2HEkoimJUILjwPa
+AyI5lmMASZBIBCJk6X99akoqStUonXKqDanZDm1h+zyf9TJ4eBp8vD31r2vw813y
+z38O+v7pufBYWFd0t8kT1UceWhcYV245VV6QuT90Oq7dg8s9bfihqNd3xVD7c0l1
+cctfPbvC/emt9fF1XdPDTQF9pihsopiVSZUfdtS/sGPj7aD62ry1HW0DbZtyrTMl
+7mCYn3C4bE1SMPvuuUG/GtdG+tuP6pcPz7ZO2G5uqp0pDcwqUUJ7Cyf/nM0+et7U
+VzMdaFn/6MVHwkui2HXj+YD0Kyfz95z5xLEsLL5zxlXc0zezN+aL0oioI6cvdOdW
+xg3cL7o01C9+yVH+VS3X3n9wtrGwx5Be5tPl7xZnH3Lb7z15MNGO1vwUGG1MQF5W
+9Y2vmnO9Rgaq2r5ZHX8vIvjK+FLD7qv7mz4Qgemz9oKcZa/gsN8Gx4/PhVRmb5u8
+KHgcUjObjqc8PHJsr2ftsdGcuycXN5gueC/ZYgx7x/tAdIUjcXBVsv/QlPstK0kt
+mvrF1sxsKCgePDHaoI5G1K2s7T14rrrlsPOPzlWVV/3eGwvwq37dfKusOn7sZzSc
+tbki5OVn/A90JH7nO2cq3TaZbD3z9XCjT1ttLNiS7mKb306uG7KPjmXU3Lg5Uljh
+Xx8z0dJAhe88at38+7qsy43FRGOfVBM38nFxWOlu96Uh+dc9W+9HtyYu7XlwJ5jo
+HuhswkmBpovJ5380TVUG7UwIuZ41V5IKPlcud1Z7+4wL19139m0oG77W6ndie+jt
+vwA=
+=hKrl
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/caitelatte
+
+==================================================================
