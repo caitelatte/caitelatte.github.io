@@ -49,6 +49,15 @@ footer {
 h1, h2, h3, h4, h5 {
     font-family: 'Josefin Sans', sans-serif;
 }
-p,  {
+p  {
     font-family: 'Nobile', sans-serif;
+}
+a:link {
+    color: rgb(40, 90, 120);
+}
+a:visited {
+    color: rgb(90, 40, 120);
+}
+a:hover, a:active {
+    color: rgb(0, 150, 150);
 }
