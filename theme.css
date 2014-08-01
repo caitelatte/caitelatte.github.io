@@ -47,10 +47,10 @@ footer {
     height: 60px;
 }
 h1, h2, h3, h4, h5 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Slab', sans-serif;
 }
-p  {
-    font-family: 'Nobile', sans-serif;
+p, li  {
+    font-family: 'Lato', sans-serif;
 }
 a:link {
     color: rgb(40, 90, 120);
