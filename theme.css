@@ -6,34 +6,49 @@ html {
   height: 100%;
 }
 body {
-	/* padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 10px; */
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	background-image: url("resources/gplaypattern.png");
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("resources/gplaypattern.png");
 }
 footer {
-	text-align: center;
+    text-align: center;
 }
 #container {
-	min-height: 100%;
-	position: relative;
+    min-height: 100%;
+    position: relative;
+}
+#banner {
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(100, 140, 150, 0.5);
+    width: 100%;
+    z-index: -1;
+}
+#banner * {
+    visibility: hidden;
+    margin-top: 0px;
 }
 #body {
-	padding: 10px;
-	padding-bottom: 60px;
+    padding: 10px;
+    padding-bottom: 60px;
+}
+#body #title {
+    margin-top: 0px;
 }
 #footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
 }
 h1, h2, h3, h4, h5 {
-	font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 p {
-	font-family: 'Nobile', sans-serif;
+    font-family: 'Nobile', sans-serif;
 }
