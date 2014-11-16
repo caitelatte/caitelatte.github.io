@@ -7,6 +7,8 @@
     <!--styles-->
     <link href="theme.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="resources/favicon.png">
+    <!--scripts-->
+    <script src="resources/modernizr.custom.13611.js"></script>
 	</head>
     <div id="banner">
       <h1>is it blue or green?</h1>
@@ -29,6 +31,10 @@
         <p id="answer">This colour is 136 points more blue than green.</p>
 
         <script type="text/javascript">
+          if (!Modernizr.inputtypes.color) {
+            // no support for HTML5 input type color
+            document.getElementById("colorTypedInput").setAttribute("hidden");
+          }
           function colorChanged() {
             document.getElementById("colorTextInput").value = document.getElementById("colorTypedInput").value;
             blueOrGreen();
