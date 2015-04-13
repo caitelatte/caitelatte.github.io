@@ -1,0 +1,23 @@
+/* written by caitelatte 2015, license at 
+   http://github.com/caitelatte/caitelatte.github.io
+*/
+
+.moving-title {
+	text-align: center;
+	animation-name: moving;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes moving {
+	from {
+		color: blue;
+		transform: scale(1,1);
+	}
+	to {
+		color: blue-green;
+		transform: scale(0.9,0.9);
+	}
+}
