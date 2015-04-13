@@ -4,33 +4,25 @@
 
 .moving-title {
 	text-align: center;
-	color: rgb(0,0,200);
-	-webkit-animation-name: moving;
-	        animation-name: moving;
-	-webkit-animation-duration: 2s;
-	        animation-duration: 2s;
-	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
-	        animation-direction: alternate;
-	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
+	color: rgb(100,150,200);
+	-webkit-animation: breathing 2.5s ease-in-out infinite alternate;
+	        animation: breathing 2.5s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes moving {
+@-webkit-keyframes breathing {
 	from {
-		color: rgb(0,0,200);
+		color: rgb(100,150,200);
 		-webkit-transform: scale(1,1);
 		        transform: scale(1,1);
 	}
 	to {
-		color: rgb(0,0,50);
+		color: rgb(10,20,50);
 		-webkit-transform: scale(0.9,0.9);
 		        transform: scale(0.9,0.9);
 	}
 }
 
-@keyframes moving {
+@keyframes breathing {
 	from {
 		color: rgb(0,0,200);
 		-webkit-transform: scale(1,1);
