@@ -24,12 +24,12 @@
 
 @keyframes breathing {
 	from {
-		color: rgb(0,0,200);
+		color: rgb(100,150,200));
 		-webkit-transform: scale(1,1);
 		        transform: scale(1,1);
 	}
 	to {
-		color: rgb(0,0,50);
+		color: rgb(100,150,200);
 		-webkit-transform: scale(0.9,0.9);
 		        transform: scale(0.9,0.9);
 	}
