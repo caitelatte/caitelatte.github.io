@@ -70,17 +70,17 @@ LP Outline:
 <h3>lesson: </h3>
 
 <!-- Week 8
-LP Outline: burnout, established project management tool
-  Lesson:
-  Proof:
+LP Outline: burnout, established project management tool producteev
+  Lesson: 
+  Proof: 
   What it changes:
 -->
 <h2 id="w8">Week 8</h2>
 <h3>lesson: </h3>
 
 <!-- Week 9
-LP Outline:
-  Lesson:
+LP Outline: project review, ramp up in productivity
+  Lesson: communication is key
   Proof:
   What it changes:
 -->
@@ -88,8 +88,8 @@ LP Outline:
 <h3>lesson: </h3>
 
 <!-- Week 10
-LP Outline:
-  Lesson:
+LP Outline: lecture on lessons learned
+  Lesson: 
   Proof:
   What it changes:
 -->
