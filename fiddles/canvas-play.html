@@ -1,0 +1,53 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Lato' rel='stylesheet' type='text/css'>
+	<title>caitelatte</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+  <!--styles-->
+  <link href="makeazine.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="../resources/favicon.png">
+  <script type="text/javascript">
+    function draw() {
+      var tutorial_canvas = document.getElementById('tutorial');
+      var thumbnail_canvas = document.getElementById('tutorial-thumbnail');
+      if (tutorial_canvas.getContext) {
+        var ctx = tutorial_canvas.getContext('2d');
+
+      } else {
+        // canvas-unsupported code here
+      }
+    }
+  </script>
+  <style type="text/css">
+    #mdn-basic-usage canvas { border: 1px solid black; }
+  </style>
+</head>
+<body onload="draw()">
+<header>
+  <h1 id="title">canvas tutorial playtime</h1>
+</header>
+<main>
+  <p>There will be canvases here!</p>
+
+  <section id="mdn-basic-usage">
+    <h2>Following Mozilla Developer Network tutorial</h2>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage">Basic usage of canvas</a></p>
+
+    <canvas id="tutorial" width="150" height="150">
+      wow such a tutorial! from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage">Basic usage of canvas</a>
+      fallback text (like telling them to use a different browser) goes here.
+    </canvas>
+
+    <canvas id="tutorial-thumbnail" width="50" height="50"></canvas>
+
+  </section>
+
+</main>
+<footer>
+  <p>©Caitlin Macleod 2017</p>
+  <nav>you're looking at <strong>canvas-tutorial-playtimes</strong> | <a href="../index.html">home?</a> | <a href="../credits.html">credits</a></nav>
+</footer>
+</body>
+</html>
