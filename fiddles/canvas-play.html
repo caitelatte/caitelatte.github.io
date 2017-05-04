@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Lato' rel='stylesheet' type='text/css'>
-	<title>caitelatte</title>
+	<title>canvas play | caitelatte</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
   <!--styles-->
   <link href="makeazine.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="../resources/favicon.png">
+  <script src="../resources/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="../resources/sketch.js" type="text/javascript"></script>
   <script type="text/javascript">
     function draw() {
       var tutorial_canvas = document.getElementById('tutorial');
@@ -21,15 +23,16 @@
     }
   </script>
   <style type="text/css">
-    #mdn-basic-usage canvas { border: 1px solid black; }
+    canvas { border: 1px solid black; }
   </style>
+
 </head>
 <body onload="draw()">
-<header>
-  <h1 id="title">canvas tutorial playtime</h1>
+<header class="no-print">
+  <h1 id="title" class="no-print">canvas tutorial playtime</h1>
 </header>
 <main>
-  <p>There will be canvases here!</p>
+  <p class="no-print">There will be canvases here!</p>
 
   <section id="mdn-basic-usage">
     <h2>Following Mozilla Developer Network tutorial</h2>
@@ -43,9 +46,20 @@
     <canvas id="tutorial-thumbnail" width="50" height="50"></canvas>
 
   </section>
+  <section id="sketch-js">
+    <h2>Testing out Sketch.js</h2>
+    <p>From <a href="http://intridea.github.io/sketch.js/">intridea.github.io</a>. Also relies on jquery.</p>
+
+    <canvas id="simple_sketch" width="700" height="300"></canvas>
+    <script type="text/javascript">
+      $(function() {
+        $('#simple_sketch').sketch();
+      });
+    </script>
+  </section>
 
 </main>
-<footer>
+<footer class="no-print">
   <p>©Caitlin Macleod 2017</p>
   <nav>you're looking at <strong>canvas-tutorial-playtimes</strong> | <a href="../index.html">home?</a> | <a href="../credits.html">credits</a></nav>
 </footer>
