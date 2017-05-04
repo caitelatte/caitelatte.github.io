@@ -1,0 +1,33 @@
+/* Made by Caitlin Macleod in 2017 */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Josefin Slab', 'Rockwell', serif;
+}
+p, li  {
+    font-family: 'Lato', sans-serif;
+}
+header, footer {
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
