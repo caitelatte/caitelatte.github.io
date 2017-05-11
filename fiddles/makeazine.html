@@ -8,6 +8,9 @@
   <!--styles-->
   <link href="makeazine.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="../resources/favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../resources/sketch.js"></script>
+  <script src="makeazine.js"></script>
 </head>
 <body>
 <header>
@@ -15,6 +18,57 @@
 </header>
 <main>
   <p>There will be canvases here to make a zine with!</p>
+  <canvas id="front-page" class="a4-page">Front page</canvas>
+  <canvas id="back-page" class="a4-page">Back page</canvas>
+  <div id="pages-front">
+    <h2>Front cover</h2>
+    <canvas id="front-cover" class="zine-page-canvas-single">Page 6</canvas>
+  </div>
+  <div id="pages-12">
+    <h2>Pages 1 and 2</h2>
+    <canvas id="page-1-2" class="zine-page-canvas-joined">Page 1</canvas>
+  </div>
+  <div id="pages-34">
+    <h2>Pages 3 and 4</h2>
+    <canvas id="page-3-4" class="zine-page-canvas-joined">Page 3</canvas>
+  </div>
+  <div id="pages-back">
+    <h2>Back cover</h2>
+    <canvas id="back-cover" class="zine-page-canvas-single">Page 5</canvas>
+  </div>
+  <div id="pages-poster">
+    <h2>Poster for back of page</h2>
+    <canvas id="back-poster" class="a4-page-canvas"></canvas>
+  </div>
+  <button type="button" id="button-download"><strong>Download and print!</strong></button>
+  <script type="text/javascript">
+    $(function() {
+      $('.zine-page-canvas-single').each(function(i, obj) {
+        $(obj).sketch();
+        obj.setAttribute('width', 296);
+        obj.setAttribute('height', 420);
+      });
+      $('.zine-page-canvas-joined').each(function(i, obj) {
+        $(obj).sketch();
+        obj.setAttribute('width', 592);
+        obj.setAttribute('height', 420);
+        ctx = obj.getContext('2d');
+        ctx.beginPath();
+        ctx.moveTo(296, 0);
+        ctx.lineTo(296,420);
+        ctx.stroke();
+      });
+      $('.a4-page-canvas').each(function(i, obj) {
+        $(obj).sketch();
+        obj.setAttribute('width', 840);
+        obj.setAttribute('height', 1188);
+      });
+      $('.a4-page').each(function(i, obj) {
+        obj.setAttribute('width', 840);
+        obj.setAttribute('height', 1188);
+      })
+    });
+  </script>
 </main>
 <footer>
   <p>©Caitlin Macleod 2017</p>
