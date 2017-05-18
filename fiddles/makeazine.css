@@ -43,11 +43,11 @@
         border: 1px solid grey;
     }
 
-    #front-page, #back-page {
+    #collected-canvases {
         display: none;
     }
 
-    #button-download {
+    button {
         background: red;
         color: white;
         border: none;
@@ -57,11 +57,10 @@
         border-radius: 5px;
         width: 80%;
         display: block;
-
         transition: background-color 0.1s ease;
     }
 
-    #button-download:active {
+    button:active {
         background: rgb(200,0,0);
     }
 
