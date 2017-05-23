@@ -12,12 +12,13 @@
   <script src="../resources/sketch.js"></script>
   <script src="makeazine.js"></script>
 </head>
-<body onload="initialise_canvases();">
+<body>
 <header>
   <h1 id="title">Make A Zine!</h1>
 </header>
 <main>
   <p>Now you can make a little 6-paged zine!</p>
+  <p><strong>Except not on mobile - that is all sorts of broken right now. Sorry :(</strong></p>
   <button type="button" id="button-toggle-instructions" class="big-red-button">Hide instructions</button>
   <div id="instructions">
     <p>This tool allows you to draw each page of a 6-page + covers "zine", a type of short hand-made book thing. You can draw each page in the boxes below, then compile them into A4-sized images to download and print.</p>
@@ -64,5 +65,6 @@
   <p>©Caitlin Macleod 2017</p>
   <nav>you're looking at <strong>makeazine</strong> | <a href="../index.html">home?</a> | <a href="../credits.html">credits</a></nav>
 </footer>
+<script>window.onload=function() {initialise_canvases();};</script>
 </body>
 </html>
