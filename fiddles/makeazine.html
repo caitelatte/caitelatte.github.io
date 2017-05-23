@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html5>
+<html lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Lato' rel='stylesheet' type='text/css'>
+	<title>make a zine | caitelatte</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+  <!--styles-->
+  <link href="makeazine.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="../resources/favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../resources/sketch.js"></script>
+</head>
+<body>
+<header>
+  <h1 id="title">Make A Zine!</h1>
+</header>
+<main>
+  <p>There will be canvases here to make a zine with!</p>
+  <button type="button" id="button-toggle-individuals">Hide individual pages</button>
+  <div id="individual-canvases">
+    <div id="pages-front">
+      <h2>Front cover</h2>
+      <canvas id="front-cover" class="zine-page-canvas-single literally-core-canvas">Front cover</canvas>
+    </div>
+    <div id="pages-12">
+      <h2>Pages 1 and 2</h2>
+      <canvas id="page-1-2" class="zine-page-canvas-joined">Pages 1-2</canvas>
+    </div>
+    <div id="pages-34">
+      <h2>Pages 3 and 4</h2>
+      <canvas id="page-3-4" class="zine-page-canvas-joined">Pages 3-4</canvas>
+    </div>
+    <div id="pages-56">
+      <h2>Pages 5 and 6</h2>
+      <canvas id="page-5-6" class="zine-page-canvas-joined">Page 5-6</canvas>
+    </div>
+    <div id="pages-back">
+      <h2>Back cover</h2>
+      <canvas id="back-cover" class="zine-page-canvas-single">Back cover</canvas>
+    </div>
+    <div id="pages-poster">
+      <h2>Poster for back of page</h2>
+      <canvas id="back-poster" class="a4-page-canvas"></canvas>
+    </div>
+    <button type="button" id="button-preview"><strong>Preview the print!</strong></button>
+  </div>
+  <button type="button" id="button-toggle-collected">Show collected pages</button>
+  <div id="collected-canvases">
+    <canvas id="front-page" class="a4-page">Front page</canvas>
+    <canvas id="back-page" class="a4-page">Back page</canvas>
+  </div>
+  <script type="text/javascript">
+    $(function() {
+      $('.zine-page-canvas-single').each(function(i, obj) {
+        $(obj).sketch();
+        obj.setAttribute('width', 296);
+        obj.setAttribute('height', 420);
+      });
+      $('.zine-page-canvas-joined').each(function(i, obj) {
+        $(obj).sketch();
+        obj.setAttribute('width', 592);
+        obj.setAttribute('height', 420);
+      });
+      $('.a4-page-canvas').each(function(i, obj) {
+        $(obj).sketch();
+        obj.setAttribute('width', 840);
+        obj.setAttribute('height', 1188);
+      });
+      $('.a4-page').each(function(i, obj) {
+        obj.setAttribute('width', 840);
+        obj.setAttribute('height', 1188);
+      })
+    });
+  </script>
+  <script src="makeazine.js"></script>
+</main>
+<footer>
+  <p>©Caitlin Macleod 2017</p>
+  <nav>you're looking at <strong>makeazine</strong> | <a href="../index.html">home?</a> | <a href="../credits.html">credits</a></nav>
+</footer>
+</body>
+</html>
