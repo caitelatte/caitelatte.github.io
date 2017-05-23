@@ -10,18 +10,24 @@
 	<link rel="icon" type="image/png" href="../resources/favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../resources/sketch.js"></script>
+  <script src="makeazine.js"></script>
 </head>
-<body>
+<body onload="initialise_canvases();">
 <header>
   <h1 id="title">Make A Zine!</h1>
 </header>
 <main>
-  <p>There will be canvases here to make a zine with!</p>
-  <button type="button" id="button-toggle-individuals">Hide individual pages</button>
+  <p>Now you can make a little 6-paged zine!</p>
+  <button type="button" id="button-toggle-instructions" class="big-red-button">Hide instructions</button>
+  <div id="instructions">
+    <p>This tool allows you to draw each page of a 6-page + covers "zine", a type of short hand-made book thing. You can draw each page in the boxes below, then compile them into A4-sized images to download and print.</p>
+    <p>The final zine will have a <a href="pages-front"><strong>front</strong></a> and <a href="pages-back"><strong>back</strong></a> cover, and three spreads of pages (<a href="#pages-12"><strong>1 and 2</strong></a>, <a href="pages-23"><strong>3 and 4</strong></a> and <a href="pages-56"><strong>5 and 6</strong></a>) and a secret poster that can be printed on the back side!</p>
+  </div>
+  <button type="button" id="button-toggle-individuals" class="big-red-button">Hide individual pages</button>
   <div id="individual-canvases">
     <div id="pages-front">
       <h2>Front cover</h2>
-      <canvas id="front-cover" class="zine-page-canvas-single literally-core-canvas">Front cover</canvas>
+      <canvas id="front-cover" class="zine-page-canvas-single">Front cover</canvas>
     </div>
     <div id="pages-12">
       <h2>Pages 1 and 2</h2>
@@ -43,37 +49,16 @@
       <h2>Poster for back of page</h2>
       <canvas id="back-poster" class="a4-page-canvas"></canvas>
     </div>
-    <button type="button" id="button-preview"><strong>Preview the print!</strong></button>
   </div>
-  <button type="button" id="button-toggle-collected">Show collected pages</button>
+  <button type="button" id="button-preview" class="big-red-button"><strong>Preview the print!</strong></button>
+  <button type="button" id="button-toggle-collected" class="big-red-button">Show collected pages</button>
   <div id="collected-canvases">
+    <p>Now you're ready to print! You can right-click these two images (you can't draw on them but you can make your edits above and re-preview) and download them. Then you can print them (double-sided if you want the secret poster!) to a printer and fold them into a small zine!</p>
+    <p><a href="#instructions">Confused? Head back up to the instructions section.</a></p>
+    <button type="button" id="button-load-example">Show me an example!</button>
     <canvas id="front-page" class="a4-page">Front page</canvas>
     <canvas id="back-page" class="a4-page">Back page</canvas>
   </div>
-  <script type="text/javascript">
-    $(function() {
-      $('.zine-page-canvas-single').each(function(i, obj) {
-        $(obj).sketch();
-        obj.setAttribute('width', 296);
-        obj.setAttribute('height', 420);
-      });
-      $('.zine-page-canvas-joined').each(function(i, obj) {
-        $(obj).sketch();
-        obj.setAttribute('width', 592);
-        obj.setAttribute('height', 420);
-      });
-      $('.a4-page-canvas').each(function(i, obj) {
-        $(obj).sketch();
-        obj.setAttribute('width', 840);
-        obj.setAttribute('height', 1188);
-      });
-      $('.a4-page').each(function(i, obj) {
-        obj.setAttribute('width', 840);
-        obj.setAttribute('height', 1188);
-      })
-    });
-  </script>
-  <script src="makeazine.js"></script>
 </main>
 <footer>
   <p>©Caitlin Macleod 2017</p>

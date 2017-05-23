@@ -47,7 +47,7 @@
         display: none;
     }
 
-    button {
+    .big-red-button {
         background: red;
         color: white;
         border: none;
@@ -60,7 +60,7 @@
         transition: background-color 0.1s ease;
     }
 
-    button:active {
+    .big-red-button:active {
         background: rgb(200,0,0);
     }
 
