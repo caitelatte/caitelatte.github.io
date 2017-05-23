@@ -146,5 +146,8 @@ function initialise_canvases() {
 			backCtx.drawImage(backImage, 0, 0);
 		}
 		backImage.src = '../resources/makeazine/foldillustration.png';
+		// move view to examples
+		setVisibility("collected-canvases", "button-toggle-collected", "collected pages", 1);
+		location.hash = "#collected-canvases";
 	});
 }
