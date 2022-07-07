@@ -36,33 +36,61 @@ footer {
     margin-top: 0px;
     text-align: center;
     color: rgb(100,150,200);
-    -webkit-animation: breathing 2.5s ease-in-out infinite alternate;
-            animation: breathing 2.5s ease-in-out infinite alternate;
+    -webkit-animation: breathing 3.5s ease-in-out infinite alternate;
+            animation: breathing 3.5s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes breathing {
-    from {
+    0% {
         color: rgb(100,150,200);
         -webkit-transform: scale(1,1);
                 transform: scale(1,1);
+        letter-spacing: 0.1em;
     }
-    to {
+    10% {
+        color: rgb(100,150,200);
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
+        letter-spacing: 0.1em;
+    }
+    90% {
         color: rgb(75,100,150);
         -webkit-transform: scale(0.9,0.9);
                 transform: scale(0.9,0.9);
+        letter-spacing: 0em;
+    }
+    100% {
+        color: rgb(75,100,150);
+        -webkit-transform: scale(0.9,0.9);
+                transform: scale(0.9,0.9);
+        letter-spacing: 0em;
     }
 }
 
 @keyframes breathing {
-    from {
+    0% {
         color: rgb(100,150,200);
         -webkit-transform: scale(1,1);
                 transform: scale(1,1);
+        letter-spacing: 0.1em;
     }
-    to {
+    10% {
+        color: rgb(100,150,200);
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
+        letter-spacing: 0.1em;
+    }
+    90% {
         color: rgb(75,100,150);
         -webkit-transform: scale(0.9,0.9);
                 transform: scale(0.9,0.9);
+        letter-spacing: 0em;
+    }
+    100% {
+        color: rgb(75,100,150);
+        -webkit-transform: scale(0.9,0.9);
+                transform: scale(0.9,0.9);
+        letter-spacing: 0em;
     }
 }
 /* BREATHE ANIMATION END */
