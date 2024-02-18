@@ -17,6 +17,7 @@ function closenessTo(x) {
     }
 }
 
+// midi numbers
 pentatonic = [60, 63,65,67,70,72,75];
 
 function playBoop(midi) {
@@ -38,7 +39,8 @@ function setupSound() {
     // set attackTime, decayTime, sustainRatio, releaseTime
     envelope.setADSR(0.001, 0.5, 0.1, 0.5);
     // set attackLevel, releaseLevel
-    envelope.setRange(1, 0);
+    // 2024 - added volume limit less than 1 to avoid ear damage
+    envelope.setRange(0.5, 0);
     oscillators.map(x=>x.start());
     oscillators.map(x=>x.amp(0));
 }

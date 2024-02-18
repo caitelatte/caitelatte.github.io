@@ -8,6 +8,13 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   noStroke();
 
+  // Confirm the volume warning and get an interaction before sound
+  let soundButton = createButton("Continue with sound", "yes");
+  soundButton.position(windowWidth/2, windowHeight/2);
+  soundButton.mouseReleased(confirmedSetup)
+}
+
+function confirmedSetup() {
   // set up the sound stuff
   setupSound();
 
