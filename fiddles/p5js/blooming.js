@@ -9,9 +9,12 @@ function setup() {
   noStroke();
 
   // Confirm the volume warning and get an interaction before sound
-  let soundButton = createButton("Continue with sound", "yes");
+  var soundButton = createButton("Continue with sound", "yes");
   soundButton.position(windowWidth/2, windowHeight/2);
-  soundButton.mouseReleased(confirmedSetup)
+  soundButton.mouseReleased(x => {
+    soundButton.remove()
+    confirmedSetup()
+  })
 }
 
 function confirmedSetup() {
@@ -34,6 +37,11 @@ function confirmedSetup() {
     color: random(bloomed_flowers),
     bloomed: 0,
   })
+
+  // Add new random flowers button
+  var randomButton = createButton("More", "yes");
+  randomButton.position(windowWidth/2, windowHeight/2);
+  randomButton.mouseReleased(addRandomBloomer)
 }
 
 function draw() {
@@ -109,4 +117,14 @@ function getBloomerRadius(b) {
   var core_radius = b.size/2;
   var petal_radius = min(b.size/2, b.bloomed * (b.size/2)) / 2
   return (core_radius + petal_radius)
+}
+
+function addRandomBloomer() {
+  bloomers.push({
+    x: random(0, width),
+    y: random(0, height),
+    size: 5,
+    color: random(bloomed_flowers),
+    bloomed: 0,
+  })
 }

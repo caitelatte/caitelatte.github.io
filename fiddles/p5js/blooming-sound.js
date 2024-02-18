@@ -38,9 +38,11 @@ function setupSound() {
     envelope = new p5.Env();
     // set attackTime, decayTime, sustainRatio, releaseTime
     envelope.setADSR(0.001, 0.5, 0.1, 0.5);
+    console.debug(oscillators)
     // set attackLevel, releaseLevel
     // 2024 - added volume limit less than 1 to avoid ear damage
-    envelope.setRange(0.5, 0);
+    envelope.setRange(0.25, 0);
     oscillators.map(x=>x.start());
     oscillators.map(x=>x.amp(0));
+    console.debug(oscillators)
 }
